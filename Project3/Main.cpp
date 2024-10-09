@@ -26,6 +26,21 @@ int main()
 	c.Input("Nina", 28, "Lawyer^s degree", 24000);
 	c.Output();
 
+	Programmer p("Anna", 21, "middle", 2000);
+	p.Output();
+	p.Input("Irina", 20, "junior", 1000);
+	p.Output();
+
+	Designer d("Sonya", 30, "illustrator", 500);
+	d.Output();
+	d.Input("Irina", 20, "graphic", 200);
+	d.Output();
+
+	Director di("Nastya", 19, "BestCmpany", 300000);
+	di.Output();
+	d.Input("Irina", 20, "SecondCompany", 9000);
+	d.Output();
+
 
 
 }
