@@ -36,6 +36,9 @@
     <ClCompile Include="Director.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Designer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Human.h">
@@ -54,6 +57,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Director.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Designer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

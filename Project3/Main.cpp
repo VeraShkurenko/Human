@@ -2,6 +2,10 @@
 #include "Human.h"
 #include "Student.h"
 #include "Teacher.h"
+#include "Designer.h"
+#include "Director.h"
+#include "Lawyer.h"
+#include "Programmer.h"
 using namespace std;
 
 int main()
@@ -16,4 +20,12 @@ int main()
 	b.Output();
 	b.Input("Olga", 43, "Politex University", 18000);
 	b.Output();
+
+	Lawyer c("Vlad", 67, "PhD degree", 30000);
+	c.Output();
+	c.Input("Nina", 28, "Lawyer^s degree", 24000);
+	c.Output();
+
+
+
 }
