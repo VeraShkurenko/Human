@@ -26,19 +26,19 @@ int main()
 	c.Input("Nina", 28, "Lawyer^s degree", 24000);
 	c.Output();
 
-	Programmer p("Anna", 21, "middle", 2000);
+	Programmer p("Julia", 31, "Middle", 40000);
 	p.Output();
-	p.Input("Irina", 20, "junior", 1000);
+	p.Input("Irina", 20, "Junior", 25000);
 	p.Output();
 
-	Designer d("Sonya", 30, "illustrator", 500);
+	Designer d("Lera", 17, "Illustrator", 5300);
 	d.Output();
-	d.Input("Irina", 20, "graphic", 200);
+	d.Input("Rina", 21, "Graphic", 8200);
 	d.Output();
 
-	Director di("Nastya", 19, "BestCmpany", 300000);
+	Director di("Lisa", 19, "BeCompany", 300000);
 	di.Output();
-	d.Input("Irina", 20, "SecondCompany", 9000);
+	d.Input("Irina", 40, "HnD", 10000);
 	d.Output();
 
 
