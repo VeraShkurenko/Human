@@ -48,3 +48,8 @@ void Student::Input(const char* n, int a, const char* U, double S)
 	Univer = new char[strlen(U) + 1];
 	strcpy_s(Univer, strlen(U) + 1, U);
 }
+
+void Student::Salary()
+{
+	cout << "Student Salary is: " << Scholarship << endl;
+}

@@ -8,13 +8,13 @@ Teacher::Teacher()
 	name = nullptr;
 	age = 12;
 	EducationalInstitution = nullptr;
-	Salary = 0;
+	salary = 0;
 }
 
 Teacher::Teacher(const char* n, int a, const char* E, double S) :Human(n, a)
 {
 	cout << "Construct Teacher\n";
-	Salary = S;
+	salary = S;
 	EducationalInstitution = new char[strlen(E) + 1];
 	strcpy_s(EducationalInstitution, strlen(E) + 1, E);
 }
@@ -30,7 +30,7 @@ void Teacher::Output()
 	cout << "Output Teacher\n";
 	Human::Output();
 	cout << "Educational Institution: " << EducationalInstitution << endl
-		<< "Salary: " << Salary << endl << endl;
+		<< "Salary: " << salary << endl << endl;
 }
 
 void Teacher::Input(const char* n, int a, const char* E, double S)
@@ -47,7 +47,15 @@ void Teacher::Input(const char* n, int a, const char* E, double S)
 	strcpy_s(name, strlen(n) + 1, n);
 	age = a;
 
-	Salary = S;
+	salary = S;
 	EducationalInstitution = new char[strlen(E) + 1];
 	strcpy_s(EducationalInstitution, strlen(E) + 1, E);
 }
+
+void Teacher::Salary()
+{
+	cout << "Teacher Salary is: " << salary << endl;
+}
+
+
+

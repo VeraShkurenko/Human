@@ -8,13 +8,13 @@ Lawyer::Lawyer()
 	name = nullptr;
 	age = 12;
 	Aquidation = nullptr;
-	Salary = 0;
+	salary = 0;
 }
 
 Lawyer::Lawyer(const char* n, int a, const char* A, double S) :Human(n, a)
 {
 	cout << "Construct Lawyer\n";
-	Salary = S;
+	salary = S;
 	Aquidation = new char[strlen(A) + 1];
 	strcpy_s(Aquidation, strlen(A) + 1, A);
 }
@@ -30,7 +30,7 @@ void Lawyer::Output()
 	cout << "Output Lawyer\n";
 	Human::Output();
 	cout << "Aquidation: " << Aquidation << endl
-		<< "Salary: " << Salary << endl << endl;
+		<< "Salary: " << salary << endl << endl;
 }
 
 void Lawyer::Input(const char* n, int a, const char* A, double S)
@@ -47,7 +47,12 @@ void Lawyer::Input(const char* n, int a, const char* A, double S)
 	strcpy_s(name, strlen(n) + 1, n);
 	age = a;
 
-	Salary = S;
+	salary = S;
 	Aquidation = new char[strlen(A) + 1];
 	strcpy_s(Aquidation, strlen(A) + 1, A);
+}
+
+void Lawyer::Salary()
+{
+	cout << "Lawyer Salary is: " << salary << endl;
 }

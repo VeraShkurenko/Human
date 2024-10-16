@@ -36,6 +36,10 @@ void Human::Input() // ввод с клавиатуры
 	cin >> age;
 
 }
+void Human::Salary()
+{
+	cout << "Salary is undefiend" << endl;
+}
 Human::~Human()
 {
 	delete[] name;

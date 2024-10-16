@@ -52,3 +52,8 @@ void Programmer::Input(const char* n, int a, const char* j, double s)
 	strcpy_s(jobTitle, strlen(j) + 1, j);
 }
 
+void Programmer::Salary()
+{
+	cout << "Programmer Salary is: " << salary << endl;
+}
+

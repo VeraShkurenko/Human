@@ -51,3 +51,9 @@ void Director::Input(const char* n, int a, const char* c, double s)
 	company = new char[strlen(c) + 1];
 	strcpy_s(company, strlen(c) + 1, c);
 }
+
+void Director::Salary()
+{
+	cout << "Director Salary is: " << salary << endl;
+
+}

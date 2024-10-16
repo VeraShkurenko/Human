@@ -3,12 +3,13 @@
 class Lawyer : public Human 
 {
 	char* Aquidation;
-	double Salary;
+	double salary;
 public:
 	Lawyer();
 	Lawyer(const char* n, int a, const char* A, double S);
 	~Lawyer();
 	void Output(); // переопределение метода Output в потомке!!
 	void Input(const char* n, int a, const char* A, double S); //замещение метода Input();
+	void Salary();
 };
 
